@@ -11,6 +11,9 @@
     "prepare": "husky"
   },
   "dependencies": {
+    "@fontsource-variable/lexend": "^5.2.11",
+    "@fontsource-variable/lexend-exa": "^5.2.11",
+    "@fontsource-variable/lexend-peta": "^5.2.11",
     "react": "^19.2.0",
     "react-dom": "^19.2.0"
   },
