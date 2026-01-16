@@ -1,14 +1,14 @@
 import { isaDataProfile } from "../../../portfolio/data/profile";
-import Hero from "../../../portfolio/sections/Hero/Hero";
+import Hero from "../../../portfolio/components/Hero/Hero";
 import "./Layout.css";
 
 const Layout: React.FC = () => {
   return (
-    <div className="layout">
-      <main className="layout__main">
+    <>
+      <main className="layout">
         <Hero dataProfile={isaDataProfile} />
       </main>
-    </div>
+    </>
   );
 };
 

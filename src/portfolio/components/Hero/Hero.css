@@ -1,6 +1,7 @@
 .hero {
   box-shadow: 3px 7px 22px 2px #0a0a0a;
   padding: 80px 70px;
+  background-color: #304d9b;
 }
 
 .hero__wrapper {
@@ -117,12 +118,12 @@
 
   @media (min-width: 375px) and (max-width: 424px) {
     .hero__name {
-      font-size: 1.9rem;
+      font-size: 1.99rem;
       line-height: 1.5;
     }
 
     .hero__position {
-      font-size: 1.33rem;
+      font-size: 1.4rem;
     }
 
     .hero__description {

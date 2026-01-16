@@ -1,4 +1,5 @@
 import type { Profile } from "../../data/types";
+import HeroLinks from "../HeroLinks/HeroLinks";
 import "./Hero.css";
 
 interface HeroProps {
@@ -24,6 +25,7 @@ const Hero: React.FC<HeroProps> = ({ dataProfile }) => {
           height={230}
         />
       </div>
+      <HeroLinks />
     </section>
   );
 };
