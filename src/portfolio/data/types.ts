@@ -10,7 +10,7 @@ export interface Profile {
 export interface Link {
   href: string;
   label: string;
-  icon: LucideIcon;
+  icon: LucideIcon | string;
   external: boolean;
   ariaLabel: string;
   download?: string;
