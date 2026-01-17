@@ -30,7 +30,6 @@ export const email: Link = {
   href: "mailto:isasaete@gmail.com",
   label: "Email",
   icon: Mail,
-
   external: false,
   ariaLabel: "Enviar correo electrónico a Isabel Sáenz",
 };

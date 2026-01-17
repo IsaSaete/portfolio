@@ -11,6 +11,7 @@
 .links-list__item {
   border: 2px solid #fac7c7;
   border-radius: 20px;
+  background-color: #304c9b;
   box-shadow:
     #00000008 0px -23px 25px 0px inset,
     #00000026 0px -36px 30px 0px inset,
