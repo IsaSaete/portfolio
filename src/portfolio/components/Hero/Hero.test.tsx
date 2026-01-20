@@ -1,28 +1,30 @@
 import { render, screen } from "@testing-library/react";
 import Hero from "./Hero";
+import { linksFixtures } from "../../fixtures/fixturesLinks";
 import { adaLovelaceProfile } from "../../fixtures/fixtures";
 
 describe("Given the Hero component", () => {
-  describe("When it receives a Ada Lovelace profile", () => {
-    test("Then it should show 'Ada Lovelace' inside a heading", () => {
-      render(<Hero dataProfile={adaLovelaceProfile} />);
+  describe("When it receives a Ada Lovelave links & profile data", () => {
+    test("Then it should show a Ada Lovelace inside a heading", () => {
+      const expectedName = /ada lovelace/i;
 
-      const userDataName = screen.getByRole("heading", {
-        name: adaLovelaceProfile.name,
-        level: 1,
+      render(<Hero links={linksFixtures} profileData={adaLovelaceProfile} />);
+
+      const profileName = screen.getByRole("heading", {
+        name: expectedName,
       });
 
-      expect(userDataName).toBeInTheDocument();
+      expect(profileName).toBeInTheDocument();
     });
 
-    test("Then it should show a portrait of Ada Lovelace", () => {
-      const imageAlternativeText = adaLovelaceProfile.name;
+    test("Then it should show a GitHub link", () => {
+      const expectedLinkLabel = /gitHub/i;
 
-      render(<Hero dataProfile={adaLovelaceProfile} />);
+      render(<Hero links={linksFixtures} profileData={adaLovelaceProfile} />);
 
-      const profileImage = screen.getByAltText(imageAlternativeText);
+      const gitHubLink = screen.getByRole("link", { name: expectedLinkLabel });
 
-      expect(profileImage).toBeInTheDocument();
+      expect(gitHubLink).toBeInTheDocument();
     });
   });
 });

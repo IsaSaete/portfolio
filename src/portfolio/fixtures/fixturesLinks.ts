@@ -1,7 +1,7 @@
-import type { Link } from "../data/types";
+import type { HeroLinkData } from "../data/types";
 
-export const emailFixture: Link = {
-  href: "mailto:fanflins@example.com",
+export const emailFixture: HeroLinkData = {
+  href: "mailto:adalovelave@example.com",
   label: "Email",
   icon: "",
   external: false,
@@ -9,8 +9,8 @@ export const emailFixture: Link = {
   download: "",
 };
 
-export const LinkedinFixture: Link = {
-  href: "https://linkedin.com/in/fanflins",
+export const LinkedinFixture: HeroLinkData = {
+  href: "https://linkedin.com/in/adalovelave",
   label: "LinkedIn",
   icon: "",
   external: false,
@@ -18,8 +18,8 @@ export const LinkedinFixture: Link = {
   download: "",
 };
 
-export const githubFixture: Link = {
-  href: "https://github.com/fanflins",
+export const githubFixture: HeroLinkData = {
+  href: "https://github.com/adalovelave",
   label: "GitHub",
   icon: "",
   external: true,
@@ -27,7 +27,7 @@ export const githubFixture: Link = {
   download: "",
 };
 
-export const linksFixtures: Link[] = [
+export const linksFixtures: HeroLinkData[] = [
   emailFixture,
   LinkedinFixture,
   githubFixture,

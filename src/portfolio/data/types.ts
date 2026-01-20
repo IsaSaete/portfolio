@@ -1,13 +1,14 @@
 import type { LucideIcon } from "lucide-react";
 
-export interface Profile {
+export interface ProfileData {
   name: string;
   role: string;
   description: string;
   portraitUrl: string;
+  location: string;
 }
 
-export interface Link {
+export interface HeroLinkData {
   href: string;
   label: string;
   icon: LucideIcon | string;

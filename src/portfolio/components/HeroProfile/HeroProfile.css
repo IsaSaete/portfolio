@@ -1,0 +1,173 @@
+.hero__wrapper {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
+
+.hero__identity {
+  flex-direction: column;
+  align-items: center;
+}
+.hero__content {
+  max-width: 350px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hero__name {
+  font-family: "Lexend Peta Variable", sans-serif;
+  color: #fac7c7;
+  font-size: 2.3rem;
+  text-shadow: 2px 2px 5px #00000080;
+  line-height: 0.45;
+}
+
+.hero__role {
+  font-family: "Lexend Exa Variable", sans-serif;
+  color: #fafafa;
+  font-size: 1.68rem;
+  letter-spacing: 0.02em;
+  text-shadow: 2px 2px 5px #00000080;
+  line-height: 1.6;
+}
+
+.hero__description {
+  color: #fac7c7;
+  font-weight: 300;
+  line-height: 1.5;
+  margin-top: 20px;
+  font-size: 1.25rem;
+  hyphens: auto;
+}
+
+.hero__image {
+  border-radius: 50%;
+  border: 3px solid #fac7c7;
+  box-shadow:
+    0 10px 15px #0404044d,
+    0 0 0 1px #ffffff1a,
+    inset 0 0 20px #ffffff0d;
+  transition: all 0.3s ease;
+}
+
+.hero__image:hover {
+  transform: translateY(-5px) scale(1.01);
+  box-shadow:
+    0 10px 30px #fac7c766,
+    0 0 0 2px #ffffff26,
+    inset 0 0 25px #ffffff1a;
+}
+
+@media (max-width: 767px) {
+  .hero__wrapper {
+    flex-direction: column-reverse;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .hero__name {
+    line-height: 1.2;
+  }
+
+  .hero__role {
+    line-height: 1;
+    white-space: nowrap;
+  }
+
+  .hero__description {
+    text-align: start;
+    margin-top: 15px;
+    line-height: 1.6;
+    hyphens: auto;
+  }
+
+  .hero__image {
+    max-width: 200px;
+    max-height: 200px;
+  }
+
+  @media (max-width: 374px) {
+    .hero__name {
+      font-size: 1.65rem;
+      line-height: 1.4;
+    }
+
+    .hero__role {
+      font-size: 1.25rem;
+    }
+
+    .hero__description {
+      font-size: 1.1rem;
+      line-height: 1.5;
+    }
+
+    .hero__image {
+      width: 180px;
+      height: 180px;
+    }
+  }
+
+  @media (min-width: 375px) and (max-width: 424px) {
+    .hero__name {
+      font-size: 2rem;
+    }
+
+    .hero__role {
+      font-size: 1.54rem;
+    }
+
+    .hero__description {
+      font-size: 1.05rem;
+    }
+  }
+
+  @media (min-width: 425px) {
+    .hero__name {
+      font-size: 2.2rem;
+    }
+
+    .hero__role {
+      font-size: 1.7rem;
+    }
+
+    .hero__description {
+      font-size: 1.1rem;
+    }
+  }
+
+  @media (min-width: 600px) {
+    .hero__description {
+      font-size: 1.15rem;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .hero__wrapper {
+    gap: 40px;
+  }
+
+  .hero__content {
+    max-width: 320px;
+  }
+
+  .hero__name {
+    font-size: 2.1rem;
+  }
+
+  .hero__role {
+    font-size: 1.57rem;
+    letter-spacing: 0.1px;
+  }
+
+  .hero__description {
+    font-size: 1.15rem;
+  }
+
+  .hero__image {
+    width: 230px;
+    height: 230px;
+  }
+}

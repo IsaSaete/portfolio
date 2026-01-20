@@ -1,7 +1,7 @@
-import type { Link } from "../../data/types";
+import type { HeroLinkData } from "../../data/types";
 
 interface HeroLinkProps {
-  link: Link;
+  link: HeroLinkData;
 }
 
 const HeroLink: React.FC<HeroLinkProps> = ({ link }) => {
