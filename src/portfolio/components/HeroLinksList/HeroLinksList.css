@@ -61,10 +61,8 @@
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 400px) {
   .links-list {
     grid-template-columns: 1fr;
-    max-width: 250px;
-    margin-top: 25px;
   }
 }
