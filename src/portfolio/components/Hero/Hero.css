@@ -5,38 +5,33 @@
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
 }
 
-@media (max-width: 767px) {
-  .hero {
-    max-width: 500px;
-    padding: 30px 20px;
-  }
-
-  @media (max-width: 374px) {
-    .hero {
-      padding: 30px 15px;
-    }
-  }
-
-  @media (min-width: 375px) and (max-width: 424px) {
-    .hero {
-      padding: 30px 15px;
-    }
-  }
-
-  @media (min-width: 425px) {
-  }
-
-  @media (min-width: 600px) {
-    .hero {
-      max-width: 550px;
-      padding: 40px 30px;
-    }
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1000px) {
   .hero {
     max-width: 700px;
     padding: 70px 50px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+  .hero {
+    max-width: 550px;
+    padding: 40px 30px;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 599px) {
+  .hero {
+    max-width: 360px;
+    padding: 30px 20px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 400px) {
+  .hero {
+    max-width: 300px;
+    padding: 30px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
 }
