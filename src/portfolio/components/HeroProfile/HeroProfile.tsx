@@ -1,8 +1,8 @@
-import type { Profile } from "../../data/types";
+import type { ProfileData } from "../../data/types";
 import "./HeroProfile.css";
 
 interface HeroProfileProps {
-  dataProfile: Profile;
+  dataProfile: ProfileData;
 }
 
 const HeroProfile: React.FC<HeroProfileProps> = ({ dataProfile }) => {

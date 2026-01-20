@@ -1,9 +1,10 @@
-import type { Profile } from "./types";
+import type { ProfileData } from "./types";
 
-export const isaDataProfile: Profile = {
+export const isaDataProfile: ProfileData = {
   name: "Isabel Sáenz",
-  role: "Full Stack Developer",
-  description: `Espececialidaza en stack MERN con especial énfasis en frontend moderno,
-     TypeScript, testing, accesibilidad y buenas prácticas, dentro de entornos Agile.`,
+  role: "Software Developer",
+  description: `Especializada en stack MERN, TypeScript, testing y calidad de código, con foco en accesibilidad y experiencia de usuario. 
+  Me interesa construir soluciones bien diseñadas, no solo funcionales.`,
   portraitUrl: "/cv.jpeg",
+  location: "Barcelona",
 };
