@@ -1,0 +1,60 @@
+.contact {
+  padding: 80px 70px 120px;
+}
+
+.contact__container {
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.contact__title {
+  font-family: "Lexend Peta Variable", sans-serif;
+  color: #fac7c7;
+  font-size: 2rem;
+  text-shadow: 2px 2px 5px #00000080;
+  position: relative;
+  display: inline-block;
+}
+
+.contact__title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #fac7c7;
+  border-radius: 2px;
+}
+
+.contact__description {
+  color: rgba(250, 250, 250, 0.75);
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 599px) {
+  .contact {
+    padding: 60px 20px 100px;
+  }
+
+  .contact__title {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 599px) {
+  .contact__container {
+    max-width: 360px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 400px) {
+  .contact__container {
+    max-width: 300px;
+  }
+}
