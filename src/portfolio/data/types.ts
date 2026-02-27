@@ -8,7 +8,7 @@ export interface ProfileData {
   location: string;
 }
 
-export interface HeroLinkData {
+export interface PortfolioLinkData {
   href: string;
   label: string;
   icon: LucideIcon | string;

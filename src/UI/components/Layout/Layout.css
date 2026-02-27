@@ -1,16 +1,18 @@
-.layout {
+.main-container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  padding: 30px 20px;
+  padding-top: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin: 0 auto;
-  height: 100dvh;
-  background-color: #304c9b;
+  min-height: 100dvh;
+  background-color: #304d9bb9;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='72' viewBox='0 0 36 72'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23fac7c7' fill-opacity='0.16'%3E%3Cpath d='M2 6h12L8 18 2 6zm18 36h12l-6 12-6-12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
-@media (max-width: 767px) {
-  .layout {
-    align-items: self-start;
-  }
+.layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
