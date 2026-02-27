@@ -4,6 +4,8 @@
 
 .contact__container {
   max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -31,7 +33,6 @@
 
 .contact__description {
   color: rgba(250, 250, 250, 0.75);
-  font-weight: 300;
   font-size: 1rem;
   line-height: 1.6;
   margin: 0;
@@ -56,5 +57,11 @@
 @media (min-width: 300px) and (max-width: 400px) {
   .contact__container {
     max-width: 300px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 2000px) {
+  .contact {
+    width: 100%;
   }
 }

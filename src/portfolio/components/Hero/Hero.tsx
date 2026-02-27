@@ -8,7 +8,7 @@ interface HeroProps {
 
 const Hero: React.FC<HeroProps> = ({ profileData }) => {
   return (
-    <section className="hero">
+    <section id="hero" className="hero">
       <HeroProfile dataProfile={profileData} />
     </section>
   );
