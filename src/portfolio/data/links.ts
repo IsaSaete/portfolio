@@ -2,7 +2,7 @@ import { FileText, Github, Linkedin, Mail } from "lucide-react";
 import type { HeroLinkData } from "./types";
 
 export const curriculum: HeroLinkData = {
-  href: "src/portfolio/data/cv-isabel.pdf",
+  href: "src/portfolio/data/cv-IsabelSaenz.pdf",
   label: "CV",
   icon: FileText,
   external: false,
