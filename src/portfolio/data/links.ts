@@ -1,7 +1,7 @@
 import { FileText, Github, Linkedin, Mail } from "lucide-react";
-import type { HeroLinkData } from "./types";
+import type { PortfolioLinkData } from "./types";
 
-export const curriculum: HeroLinkData = {
+export const curriculum: PortfolioLinkData = {
   href: "src/portfolio/data/cv-IsabelSaenz.pdf",
   label: "CV",
   icon: FileText,
@@ -10,7 +10,7 @@ export const curriculum: HeroLinkData = {
   download: "cv-isabel.pdf",
 };
 
-export const linkedInLink: HeroLinkData = {
+export const linkedInLink: PortfolioLinkData = {
   href: "https://www.linkedin.com/in/isa-saenz/",
   label: "LinkedIn",
   icon: Linkedin,
@@ -18,7 +18,7 @@ export const linkedInLink: HeroLinkData = {
   ariaLabel: "Visitar perfil de LinkedIn",
 };
 
-export const gitHubLink: HeroLinkData = {
+export const gitHubLink: PortfolioLinkData = {
   href: "https://github.com/IsaSaete",
   label: "GitHub",
   icon: Github,
@@ -26,7 +26,7 @@ export const gitHubLink: HeroLinkData = {
   ariaLabel: "Visitar perfil de GitHub",
 };
 
-export const email: HeroLinkData = {
+export const email: PortfolioLinkData = {
   href: "mailto:isasaete@gmail.com",
   label: "Email",
   icon: Mail,
@@ -34,7 +34,7 @@ export const email: HeroLinkData = {
   ariaLabel: "Enviar correo electrónico a Isabel Sáenz",
 };
 
-export const isabelSaenzLinks: HeroLinkData[] = [
+export const isabelSaenzLinks: PortfolioLinkData[] = [
   curriculum,
   linkedInLink,
   gitHubLink,

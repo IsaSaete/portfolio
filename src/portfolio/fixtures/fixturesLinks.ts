@@ -1,6 +1,6 @@
-import type { HeroLinkData } from "../data/types";
+import type { PortfolioLinkData } from "../data/types";
 
-export const emailFixture: HeroLinkData = {
+export const emailFixture: PortfolioLinkData = {
   href: "mailto:adalovelave@example.com",
   label: "Email",
   icon: "",
@@ -9,7 +9,7 @@ export const emailFixture: HeroLinkData = {
   download: "",
 };
 
-export const LinkedinFixture: HeroLinkData = {
+export const LinkedinFixture: PortfolioLinkData = {
   href: "https://linkedin.com/in/adalovelave",
   label: "LinkedIn",
   icon: "",
@@ -18,7 +18,7 @@ export const LinkedinFixture: HeroLinkData = {
   download: "",
 };
 
-export const githubFixture: HeroLinkData = {
+export const githubFixture: PortfolioLinkData = {
   href: "https://github.com/adalovelave",
   label: "GitHub",
   icon: "",
@@ -27,7 +27,7 @@ export const githubFixture: HeroLinkData = {
   download: "",
 };
 
-export const linksFixtures: HeroLinkData[] = [
+export const linksFixtures: PortfolioLinkData[] = [
   emailFixture,
   LinkedinFixture,
   githubFixture,
