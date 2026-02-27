@@ -2,7 +2,7 @@ import { FileText, Github, Linkedin, Mail } from "lucide-react";
 import type { PortfolioLinkData } from "./types";
 
 export const curriculum: PortfolioLinkData = {
-  href: "src/portfolio/data/cv-IsabelSaenz.pdf",
+  href: "/cv-IsabelSaenz.pdf",
   label: "CV",
   icon: FileText,
   external: false,
