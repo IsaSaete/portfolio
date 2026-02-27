@@ -1,5 +1,7 @@
+import About from "../../../portfolio/components/About/About";
 import Contact from "../../../portfolio/components/Contact/Contact";
 import Hero from "../../../portfolio/components/Hero/Hero";
+import { aboutText, techStack } from "../../../portfolio/data/about";
 import { isabelSaenzLinks } from "../../../portfolio/data/links";
 import { isaDataProfile } from "../../../portfolio/data/profile";
 import Footer from "../Footer/Footer";
@@ -13,6 +15,7 @@ const Layout: React.FC = () => {
       <div className="main-container">
         <main className="layout">
           <Hero profileData={isaDataProfile} />
+          <About text={aboutText} techStack={techStack} />
           <Contact links={isabelSaenzLinks} />
         </main>
         <Footer

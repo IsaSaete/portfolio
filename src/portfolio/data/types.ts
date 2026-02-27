@@ -16,3 +16,8 @@ export interface PortfolioLinkData {
   ariaLabel: string;
   download?: string;
 }
+
+export interface TechIcon {
+  name: string;
+  iconUrl: string;
+}
